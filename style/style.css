@@ -50,3 +50,19 @@ img.bot-img {
   bottom: 0;
   width: 100%;
 }
+
+.social-icons-bar {
+  margin-top: 35px;
+}
+
+.social-media {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+}
+.share-count {
+  font-size: 12px;
+}
+.share-button {
+
+}
