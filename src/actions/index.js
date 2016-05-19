@@ -1,11 +1,9 @@
 import axios from 'axios'
 
-const ROOT_URL = 'http://localhost:5000';
+const ROOT_URL = 'http://104.236.88.113';
 
 export const FETCH_JOKESTOLD = 'FETCH_JOKESTOLD';
 export const SEND_JOKE = 'SEND_JOKE';
-export const TEST_POST = 'TEST_POST';
-
 
 export function fetchJokestold() {
   const url = `${ROOT_URL}/jokestold`;
@@ -22,36 +20,10 @@ export function sendJoke(phone) {
 
   phone = '+1' + phone.replace(/[- )()]/g, '');
 
-  const request = axios.post(url, phone)
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (response) {
-    console.log(response);
-  });  
+  const request = axios.post(url, {"phone":phone});  
 
   return {
     type: SEND_JOKE,
-    payload: request
-  };
-}
-
-
-export function testPost(phone) {
-  const url = `${ROOT_URL}/testPost`;
-
-  phone = '+1' + phone.replace(/[- )()]/g, '');
-
-  const request = axios.post(url, {"phone":"+14043043723"})
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (response) {
-    console.log(response);
-  });  
-
-  return {
-    type: TEST_POST,
     payload: request
   };
 }

@@ -3,7 +3,6 @@ import MaskedInput from 'react-maskedinput';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { sendJoke } from '../actions/index';
-import { testPost } from '../actions/index';
 
 
 class SearchBar extends Component {
@@ -25,7 +24,7 @@ class SearchBar extends Component {
     event.preventDefault();
 
     // send joke to phone
-    this.props.testPost(this.state.phone);
+    this.props.sendJoke(this.state.phone);
     this.setState({ phone: '' });
   }
 
@@ -52,7 +51,7 @@ class SearchBar extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ testPost }, dispatch);
+  return bindActionCreators({ sendJoke }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(SearchBar);
