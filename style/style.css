@@ -13,10 +13,10 @@ td:first-of-type {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 p, div {
-    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
 }
 
 img.bot-img {
@@ -24,45 +24,78 @@ img.bot-img {
 }
 
 .main-header {
-    display: inline;
-    vertical-align: bottom;
-    margin-left: 30px;    
+  display: inline;
+  vertical-align: bottom;
+  margin-left: 30px;    
 }
 
 .top-space {
-  margin-top: 1%;
-}
-
-.left {
-  text-align: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
+  margin-top: 10px;
 }
 
 .footer {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  bottom: 50px;
+  display: inline-flex;
 }
 
 .social-icons-bar {
-  margin-top: 35px;
+  margin-top: 53px;
+  text-align: center;
 }
 
 .social-media {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 10px;
   text-align: center;
 }
 .share-count {
   font-size: 12px;
 }
-.share-button {
 
+.desktop-only {
+  display: none;
+}
+
+@media screen and (max-width:991px) { 
+  .footer-link {
+    text-decoration: underline;
+    padding: 0 7px 0 7px !important;
+  }
+
+  .footer {
+    right:30px;
+  }
+
+  input[type="submit"],
+  .mobilebutton {
+    cursor:pointer !important;
+    -webkit-appearance:none !important;
+    -moz-appearance:none !important;
+  }
+}
+
+@media screen and (max-width:991px) and (orientation:landscape) { 
+  .footer {
+    display:none;
+  }
+
+  .social-icons-bar {
+    display:none;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .footer {
+    right: 20%;    
+  }
+
+  .footer-link {
+    padding: 0 17px 0 17px !important;
+    width: auto !important
+  }
 }

@@ -37,12 +37,14 @@ class SearchBar extends Component {
             name="phone"
             mask="(111) 111-1111"
             placeholder="(123) 456-7890"
+            placeholderChar=" "
             className="form-control"
             value={this.state.phone}
             onChange={this.onInputChange}
+            type="tel"
           />
           <span className="input-group-btn">
-            <button type="submit" className="btn btn-secondary">Send dadjoke</button>
+            <input type="submit" className="btn btn-secondary mobilebutton" value="Send dadjoke" />
           </span>
         </form>
       </div>
