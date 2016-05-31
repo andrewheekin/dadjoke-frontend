@@ -41,15 +41,8 @@ img.bot-img {
   bottom: 50px;
   display: inline-flex;
 }
-
-.social-icons-bar {
-  margin-top: 70px;
-  text-align: center;
-}
-
 .social-media {
   display: inline-block;
-  margin-right: 10px;
   text-align: center;
 }
 .share-count {
@@ -75,39 +68,45 @@ img.bot-img {
   .footer {
     right:30px;
   }
-
-  input[type="submit"],
-  .mobilebutton {
-    cursor:pointer !important;
-    -webkit-appearance:none !important;
-    -moz-appearance:none !important;
-  }
-
-  .social-icons-bar {
-    margin-top: 100px;
-  }  
-
   .social-media {
-
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
   }
-
+  .social-icons-bar {
+    margin-top: 35px;
+    text-align: center;
+  }  
   .share-button {
 
   }
   #send-joke-btn-mobile {
-    font-size: 24px;
+    font-size: 23px;
     height: 70px;
     border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em;    
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor:pointer !important;
+    -webkit-appearance:none !important;
+    -moz-appearance:none !important;
+    border: 1px solid transparent;
+    background: #ddd;
+  }
+  #send-joke-btn-mobile:active {
+    background: #999 !important;
   }
 
   #phone-input {
-    font-size: 24px;
+    font-size: 23px;
     height: 70px;
-    width: 300px;    
+    width: 225px;    
   }
   .phone-label-mobile {
     font-size: 22px !important;
+  }
+  #phone-div {
+    padding-left:0px;
   }
 }
 /*####### (end mobile <992px portrait) ########*/
@@ -125,6 +124,36 @@ img.bot-img {
   .social-icons-bar {
     display:none;
   }
+  .footer {
+    display:none !important;
+  }
+  #send-joke-btn-mobile {
+    font-size: 23px;
+    height: 70px;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor:pointer !important;
+    -webkit-appearance:none !important;
+    -moz-appearance:none !important;
+    border: 1px solid transparent;
+    background: #ddd; 
+  }
+  #send-joke-btn-mobile:active {
+    background: #999 !important;
+  }  
+  #phone-input {
+    font-size: 23px;
+    height: 70px;
+    width: 240px;    
+  }
+  .phone-label-mobile {
+    font-size: 22px !important;
+  }
+  #phone-div {
+    padding-left:0px;
+  }  
 }
 /*####### (end mobile <992px landscape) ########*/
 
@@ -146,14 +175,27 @@ img.bot-img {
     padding: 0 17px 0 17px !important;
     width: auto !important
   }
-
+  .social-media {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+  }
+  .social-icons-bar {
+    margin-top: 100px;
+    text-align: center;
+  }  
   #send-joke-btn {
     font-size: 24px;
     height: 70px;
     border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em;
+    border-bottom-left-radius: 0em;  
   }
-
+  #send-joke-btn:active {
+    background: #999 !important;
+  }
+  #send-joke-btn:hover {
+    background: #b7b7b7 !important;
+  }  
   #phone-input {
     font-size: 24px;
     height: 70px; 

@@ -49,7 +49,7 @@ class PhoneInputGroup extends Component {
             <input type="submit" id="send-joke-btn" className="btn btn-secondary" value="Send dadjoke" />
           </span>
           <span className="mobile input-group-btn">
-            <input type="submit" id="send-joke-btn-mobile" className="btn btn-secondary mobilebutton" value="Send" />
+            <input type="submit" id="send-joke-btn-mobile" className="" value="Send" />
           </span>          
         </form>
       </div>

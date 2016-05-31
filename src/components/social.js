@@ -37,11 +37,9 @@ export default class Social extends Component {
             url={shareUrl}
             title={title}
             className="share-button">
-            <FacebookIcon
-              size={32}
-              round />
+            <FacebookIcon className="desktop" size={50} round />
+            <FacebookIcon className="mobile" size={37} round />            
           </FacebookShareButton>
-
           {/*<FacebookShareCount
             url={shareUrl}
             className="share-count">
@@ -54,11 +52,9 @@ export default class Social extends Component {
             url={shareUrl}
             title={title}
             className="share-button">
-            <TwitterIcon
-              size={32}
-              round />
+            <TwitterIcon className="desktop" size={50} round />
+            <TwitterIcon className="mobile" size={37} round />          
           </TwitterShareButton>
-
           {/*<div className="share-count">
             &nbsp;
           </div>*/}
@@ -68,11 +64,9 @@ export default class Social extends Component {
           <GooglePlusShareButton
             url={shareUrl}
             className="share-button">
-            <GooglePlusIcon
-              size={32}
-              round />
+            <GooglePlusIcon className="desktop" size={50} round />
+            <GooglePlusIcon className="mobile" size={37} round />
           </GooglePlusShareButton>
-
           {/*<GooglePlusShareCount
             url={shareUrl}
             className="share-count">
@@ -85,11 +79,9 @@ export default class Social extends Component {
             url={shareUrl}
             title={title}
             className="share-button">
-            <LinkedinIcon
-              size={32}
-              round />
+            <LinkedinIcon className="desktop" size={50} round />
+            <LinkedinIcon className="mobile" size={37} round />            
           </LinkedinShareButton>
-
           {/*<LinkedinShareCount
             url={shareUrl}
             className="share-count">
@@ -101,11 +93,9 @@ export default class Social extends Component {
           <VKShareButton
             url={shareUrl}
             className="share-button">
-            <VKIcon
-              size={32}
-              round />
+            <VKIcon className="desktop" size={50} round />
+            <VKIcon className="mobile" size={37} round />            
           </VKShareButton>
-
           {/*<div className="share-count">
             &nbsp;
           </div>*/}
