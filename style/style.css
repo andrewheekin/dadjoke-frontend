@@ -1,3 +1,6 @@
+
+/*####### ALL MEDIA ########*/
+
 .input-group {
   margin: 20px 0px;
 }
@@ -40,7 +43,7 @@ img.bot-img {
 }
 
 .social-icons-bar {
-  margin-top: 53px;
+  margin-top: 70px;
   text-align: center;
 }
 
@@ -52,12 +55,18 @@ img.bot-img {
 .share-count {
   font-size: 12px;
 }
+/*####### (end all media) ########*/
 
-.desktop-only {
-  display: none;
-}
 
-@media screen and (max-width:991px) { 
+/*####### MOBILE <992px PORTRAIT ########*/
+
+@media screen and (max-width:991px) and (orientation:portrait) { 
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
   .footer-link {
     text-decoration: underline;
     padding: 0 7px 0 7px !important;
@@ -73,23 +82,62 @@ img.bot-img {
     -webkit-appearance:none !important;
     -moz-appearance:none !important;
   }
-}
 
-@media screen and (max-width:991px) and (orientation:landscape) { 
-  .footer {
-    display:none;
+  .social-icons-bar {
+    margin-top: 100px;
+  }  
+
+  .social-media {
+
   }
 
+  .share-button {
+
+  }
+  #send-joke-btn-mobile {
+    font-size: 24px;
+    height: 70px;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;    
+  }
+
+  #phone-input {
+    font-size: 24px;
+    height: 70px;
+    width: 300px;    
+  }
+  .phone-label-mobile {
+    font-size: 22px !important;
+  }
+}
+/*####### (end mobile <992px portrait) ########*/
+
+
+/*####### MOBILE <992px LANDSCAPE ########*/
+
+@media screen and (max-width:991px) and (orientation:landscape) { 
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
   .social-icons-bar {
     display:none;
   }
 }
+/*####### (end mobile <992px landscape) ########*/
+
+
+/*####### DESKTOP >=992px ########*/
 
 @media screen and (min-width:992px) {
-  .desktop-only {
-    display: block;
+  .desktop {
+    display: block !important;
   }
-
+  .mobile {
+    display: none !important;
+  }
   .footer {
     right: 20%;    
   }
@@ -98,4 +146,22 @@ img.bot-img {
     padding: 0 17px 0 17px !important;
     width: auto !important
   }
+
+  #send-joke-btn {
+    font-size: 24px;
+    height: 70px;
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+  }
+
+  #phone-input {
+    font-size: 24px;
+    height: 70px; 
+    width: 300px;
+  }
+
+  #phone-div {
+    float:none;
+  }
 }
+/*####### (end desktop >=992px) ########*/

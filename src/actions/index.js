@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const ROOT_URL = 'http://104.236.88.113';
+const ROOT_URL = 'https://dadjokeserver.com';
 
 export const FETCH_JOKESTOLD = 'FETCH_JOKESTOLD';
 export const SEND_JOKE = 'SEND_JOKE';

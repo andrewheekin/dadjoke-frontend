@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 import { sendJoke } from '../actions/index';
 
 
-class SearchBar extends Component {
+class PhoneInputGroup extends Component {
   constructor(props) {
     super(props);
 
@@ -30,22 +30,27 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
-        <h5>Enter a phone number</h5>
+      <div id="phone-div" className="col-md-9 col-md-offset-2">
+        <div className="h3 phone-label-mobile">Enter a phone number</div>
         <form onSubmit={this.onFormSubmit} className="input-group">
           <MaskedInput
+            id="phone-input"
             name="phone"
-            mask="(111) 111-1111"
+            mask="(111)111-1111"
             placeholder="(123) 456-7890"
             placeholderChar=" "
             className="form-control"
             value={this.state.phone}
             onChange={this.onInputChange}
             type="tel"
+            required
           />
-          <span className="input-group-btn">
-            <input type="submit" className="btn btn-secondary mobilebutton" value="Send dadjoke" />
+          <span className="desktop input-group-btn">
+            <input type="submit" id="send-joke-btn" className="btn btn-secondary" value="Send dadjoke" />
           </span>
+          <span className="mobile input-group-btn">
+            <input type="submit" id="send-joke-btn-mobile" className="btn btn-secondary mobilebutton" value="Send" />
+          </span>          
         </form>
       </div>
     );
@@ -56,4 +61,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ sendJoke }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(SearchBar);
+export default connect(null, mapDispatchToProps)(PhoneInputGroup);
