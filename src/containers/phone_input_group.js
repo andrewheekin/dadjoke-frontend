@@ -31,7 +31,8 @@ class PhoneInputGroup extends Component {
   render() {
     return (
       <div id="phone-div" className="col-md-9 col-md-offset-2">
-        <div className="h3 phone-label-mobile">Enter a phone number</div>
+        <div className="h3 phone-label-mobile">Enter a phone number:</div>
+        <div className="h4 phone-label-mobile">(or text "dadjoke" to (404)476-6987)</div>
         <form onSubmit={this.onFormSubmit} className="input-group">
           <MaskedInput
             id="phone-input"
